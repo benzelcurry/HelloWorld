@@ -16,6 +16,9 @@
 
         public int CalculateAge(int year)
         {
+            if (year <= 0)
+                throw new Exception("Year can't be 0 or less");
+
             int age = DateTime.Now.Year - year;
 
             return age;
