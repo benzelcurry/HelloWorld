@@ -3,7 +3,7 @@
 NameClass nameClass = new NameClass();
 AgeClass ageClass = new AgeClass();
 
-Console.WriteLine($"You are {ageClass.CalculateAge(new DateTime(1996, 10, 22))} years old");
+Console.WriteLine($"You are {ageClass.CalculateAge(0)} years old");
 
 while (string.IsNullOrEmpty(nameClass.Name))
 {
