@@ -1,4 +1,6 @@
-﻿namespace HelloWorld
+﻿using System.Diagnostics;
+
+namespace HelloWorld
 {
     public class AgeClass
     {
@@ -16,6 +18,8 @@
 
         public int CalculateAge(int year)
         {
+            Debug.WriteLineIf(year <= 1900, "This person is from or before 1900?");
+
             if (year <= 0)
                 throw new Exception("Year can't be 0 or less");
 

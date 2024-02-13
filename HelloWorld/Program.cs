@@ -33,7 +33,6 @@ catch (Exception ex)
     
 }
 
-Console.WriteLine($"You are {ageClass.CalculateAge(0)} years old");
 
 while (string.IsNullOrEmpty(nameClass.Name))
 {
