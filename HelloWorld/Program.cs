@@ -38,6 +38,8 @@ catch (Exception ex)
     
 }
 
+fileListener.Close();
+
 
 //while (string.IsNullOrEmpty(nameClass.Name))
 //{
