@@ -2,6 +2,7 @@
 {
     public abstract class Dog
     {
+        private int _legs { get; set; }
         public abstract void Sound();
 
         public virtual string Breed()
@@ -9,9 +10,10 @@
             return "Dog";
         }
 
-        public int NumberOfLegs()
+        public int Legs
         {
-            return 4;
+            get { return _legs; }
+            set { _legs = value; }
         }
 
         public int NumberOfEyes()

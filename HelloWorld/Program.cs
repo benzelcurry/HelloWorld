@@ -1,10 +1,11 @@
 ﻿using HelloWorld;
 
 GoldenRetriever goldenRetriever = new();
+goldenRetriever.Legs = 4;
 
 Console.WriteLine
 (
-    $"A {goldenRetriever.Breed()} has {goldenRetriever.NumberOfLegs()} legs," +
+    $"A {goldenRetriever.Breed()} has {goldenRetriever.Legs} legs," +
     $" has " + (goldenRetriever.HasTail() ? "a" : "no") + $" tail, and {goldenRetriever.NumberOfEyes()} eyes."
 );
 
