@@ -6,5 +6,10 @@
         {
             Console.WriteLine("Ruff!");
         }
+
+        public override string Breed()
+        {
+            return "Golden Retriever";
+        }
     }
 }

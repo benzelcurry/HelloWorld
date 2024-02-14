@@ -5,7 +5,7 @@ GoldenRetriever goldenRetriever = new();
 Console.WriteLine
 (
     $"A {goldenRetriever.Breed()} has {goldenRetriever.NumberOfLegs()} legs," +
-    $"has " + (goldenRetriever.HasTail() ? "a" : "no") + $" tail, and {goldenRetriever.NumberOfEyes()} eyes."
+    $" has " + (goldenRetriever.HasTail() ? "a" : "no") + $" tail, and {goldenRetriever.NumberOfEyes()} eyes."
 );
 
 Console.WriteLine($"A {goldenRetriever.Breed()} says: ");
