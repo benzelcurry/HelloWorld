@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
-      "projectName": "HelloWorld",
-      "projectPath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
+      "projectUniqueName": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld.Business\\HelloWorld.Business.csproj",
+      "projectName": "HelloWorld.Business",
+      "projectPath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld.Business\\HelloWorld.Business.csproj",
       "packagesPath": "C:\\Users\\BenAW\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld\\obj\\",
+      "outputPath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld.Business\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
