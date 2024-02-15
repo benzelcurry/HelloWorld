@@ -1,8 +1,8 @@
-﻿using HelloWorld;
+﻿using HelloWorld.Business;
 using System.Diagnostics;
 
 //NameClass nameClass = new NameClass();
-AgeClass ageClass = new AgeClass();
+AgeService ageService = new AgeService();
 
 TextWriterTraceListener fileListener = new TextWriterTraceListener("log.txt");
 Trace.Listeners.Add(fileListener);
@@ -15,10 +15,10 @@ try
     Trace.WriteLine("Trying to calculate the ages.");
 
     Trace.WriteLine("Calculating year 1996");
-    int currentAge = ageClass.CalculateAge(1996);
+    int currentAge = ageService.CalculateAge(1996);
 
     Trace.WriteLine("Calculating year 1899");
-    int currentAge2 = ageClass.CalculateAge(1899);
+    int currentAge2 = ageService.CalculateAge(1899);
     Console.WriteLine($"You are {currentAge} years old");
 }
 catch (Exception ex)
