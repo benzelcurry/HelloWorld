@@ -30,8 +30,8 @@
         {
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
-            textBox1 = new TextBox();
+            ageResult = new Label();
+            yearOfBirth = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
@@ -53,20 +53,20 @@
             label2.TabIndex = 1;
             label2.Text = "Result:";
             // 
-            // label3
+            // ageResult
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(285, 319);
-            label3.Name = "label3";
-            label3.Size = new Size(0, 37);
-            label3.TabIndex = 2;
+            ageResult.AutoSize = true;
+            ageResult.Location = new Point(285, 319);
+            ageResult.Name = "ageResult";
+            ageResult.Size = new Size(0, 37);
+            ageResult.TabIndex = 2;
             // 
-            // textBox1
+            // yearOfBirth
             // 
-            textBox1.Location = new Point(285, 89);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(691, 43);
-            textBox1.TabIndex = 3;
+            yearOfBirth.Location = new Point(285, 89);
+            yearOfBirth.Name = "yearOfBirth";
+            yearOfBirth.Size = new Size(691, 43);
+            yearOfBirth.TabIndex = 3;
             // 
             // button1
             // 
@@ -76,6 +76,7 @@
             button1.TabIndex = 4;
             button1.Text = "Calculate Age";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
             // 
             // Form1
             // 
@@ -83,8 +84,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1172, 705);
             Controls.Add(button1);
-            Controls.Add(textBox1);
-            Controls.Add(label3);
+            Controls.Add(yearOfBirth);
+            Controls.Add(ageResult);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
@@ -97,8 +98,8 @@
 
         private Label label1;
         private Label label2;
-        private Label label3;
-        private TextBox textBox1;
+        private Label ageResult;
+        private TextBox yearOfBirth;
         private Button button1;
     }
 }

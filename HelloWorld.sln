@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\He
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Business", "HelloWorld.Business\HelloWorld.Business.csproj", "{E36E07E0-083F-48A5-947A-EA6136D1E348}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.WinForms", "HelloWorld.WinForms\HelloWorld.WinForms.csproj", "{AD219BF1-A118-453B-8088-EBB8A6720B48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.WinForms", "HelloWorld.WinForms\HelloWorld.WinForms.csproj", "{AD219BF1-A118-453B-8088-EBB8A6720B48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{99FD557A-972A-4789-AF42-E9244538C026}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

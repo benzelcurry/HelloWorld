@@ -1,3 +1,5 @@
+using HelloWorld.Business;
+
 namespace HelloWorld.WinForms
 {
     public partial class Form1 : Form
@@ -7,9 +9,14 @@ namespace HelloWorld.WinForms
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Hello WinForms!");
+            int year = int.Parse(yearOfBirth.Text);
+
+            AgeService ageService = new();
+            int age = ageService.CalculateAge(year);
+
+            ageResult.Text = age.ToString();
         }
     }
 }
