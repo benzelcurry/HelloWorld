@@ -11,7 +11,7 @@ namespace HelloWorld.WinForms
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            int year = int.Parse(yearOfBirth.Text);
+            int year = dateOfBirthPicker.Value.Year;
 
             AgeService ageService = new();
             int age = ageService.CalculateAge(year);

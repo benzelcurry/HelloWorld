@@ -31,8 +31,8 @@
             label1 = new Label();
             label2 = new Label();
             ageResult = new Label();
-            yearOfBirth = new TextBox();
             button1 = new Button();
+            dateOfBirthPicker = new DateTimePicker();
             SuspendLayout();
             // 
             // label1
@@ -61,13 +61,6 @@
             ageResult.Size = new Size(0, 37);
             ageResult.TabIndex = 2;
             // 
-            // yearOfBirth
-            // 
-            yearOfBirth.Location = new Point(285, 89);
-            yearOfBirth.Name = "yearOfBirth";
-            yearOfBirth.Size = new Size(691, 43);
-            yearOfBirth.TabIndex = 3;
-            // 
             // button1
             // 
             button1.Location = new Point(285, 211);
@@ -78,13 +71,20 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click_1;
             // 
+            // dateOfBirthPicker
+            // 
+            dateOfBirthPicker.Location = new Point(285, 86);
+            dateOfBirthPicker.Name = "dateOfBirthPicker";
+            dateOfBirthPicker.Size = new Size(450, 43);
+            dateOfBirthPicker.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1172, 705);
+            Controls.Add(dateOfBirthPicker);
             Controls.Add(button1);
-            Controls.Add(yearOfBirth);
             Controls.Add(ageResult);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -99,7 +99,7 @@
         private Label label1;
         private Label label2;
         private Label ageResult;
-        private TextBox yearOfBirth;
         private Button button1;
+        private DateTimePicker dateOfBirthPicker;
     }
 }
