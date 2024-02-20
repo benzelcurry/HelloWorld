@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "HelloWorld/1.0.0": {
-        "dependencies": {
-          "HelloWorld.Business": "1.0.0"
-        },
-        "runtime": {
-          "HelloWorld.dll": {}
-        }
-      },
       "HelloWorld.Business/1.0.0": {
         "runtime": {
           "HelloWorld.Business.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "HelloWorld/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "HelloWorld.Business/1.0.0": {
       "type": "project",
       "serviceable": false,

@@ -13,3 +13,7 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\obj\Debug\net8.0\HelloWorld.pd
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\obj\Debug\net8.0\HelloWorld.genruntimeconfig.cache
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\obj\Debug\net8.0\ref\HelloWorld.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\obj\Debug\net8.0\HelloWorld.sourcelink.json
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\bin\Debug\net8.0\HelloWorld.Business.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\bin\Debug\net8.0\HelloWorld.Business.pdb
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\obj\Debug\net8.0\HelloWorld.csproj.AssemblyReference.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\obj\Debug\net8.0\HelloWorld.csproj.CopyComplete

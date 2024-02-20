@@ -1,0 +1,17 @@
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\HelloWorld.WinForms.exe
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\HelloWorld.WinForms.deps.json
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\HelloWorld.WinForms.runtimeconfig.json
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\HelloWorld.WinForms.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\HelloWorld.WinForms.pdb
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.Form1.resources
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.csproj.GenerateResource.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.AssemblyInfoInputs.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.AssemblyInfo.cs
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.csproj.CoreCompileInputs.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.sourcelink.json
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\refint\HelloWorld.WinForms.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.pdb
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.genruntimeconfig.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\ref\HelloWorld.WinForms.dll

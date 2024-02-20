@@ -1,0 +1,10 @@
+Application started
+Trying to calculate the ages.
+Calculating year 1996
+Calculating year 1899
+This person is from or before 1900?
+Application started
+Trying to calculate the ages.
+Calculating year 1996
+Calculating year 1899
+This person is from or before 1900?
