@@ -8,5 +8,11 @@ namespace HelloWorld.WinForms
         {
             InitializeComponent();
         }
+
+        private void showDetails(object sender, EventArgs e)
+        {
+            UserInformation userInformation = new();
+            userInformation.Show();
+        }
     }
 }

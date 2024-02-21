@@ -28,19 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            enterDetails = new Button();
             SuspendLayout();
+            // 
+            // enterDetails
+            // 
+            enterDetails.Location = new Point(452, 496);
+            enterDetails.Name = "enterDetails";
+            enterDetails.Size = new Size(241, 52);
+            enterDetails.TabIndex = 0;
+            enterDetails.Text = "Enter Details";
+            enterDetails.UseVisualStyleBackColor = true;
+            enterDetails.Click += showDetails;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1172, 705);
+            Controls.Add(enterDetails);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button enterDetails;
     }
 }
