@@ -16,5 +16,14 @@ namespace HelloWorld.WinForms
         {
             InitializeComponent();
         }
+
+        private void UserInformation_Load(object sender, EventArgs e)
+        {
+            gender.Items.Clear();
+            gender.Items.Add("Male");
+            gender.Items.Add("Female");
+            gender.Items.Add("Nonbinary");
+            gender.Items.Add("Other");
+        }
     }
 }

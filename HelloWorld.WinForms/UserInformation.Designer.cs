@@ -28,82 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            name = new Label();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            textBox1 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            comboBox1 = new ComboBox();
+            nameLabel = new Label();
+            emailLabel = new Label();
+            genderLabel = new Label();
+            countryLabel = new Label();
+            name = new TextBox();
+            email = new TextBox();
+            country = new TextBox();
+            gender = new ComboBox();
             button1 = new Button();
             button2 = new Button();
             SuspendLayout();
             // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new Point(66, 58);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new Size(94, 37);
+            nameLabel.TabIndex = 0;
+            nameLabel.Text = "Name:";
+            // 
+            // emailLabel
+            // 
+            emailLabel.AutoSize = true;
+            emailLabel.Location = new Point(66, 122);
+            emailLabel.Name = "emailLabel";
+            emailLabel.Size = new Size(99, 37);
+            emailLabel.TabIndex = 1;
+            emailLabel.Text = "E-mail:";
+            // 
+            // genderLabel
+            // 
+            genderLabel.AutoSize = true;
+            genderLabel.Location = new Point(66, 184);
+            genderLabel.Name = "genderLabel";
+            genderLabel.Size = new Size(110, 37);
+            genderLabel.TabIndex = 2;
+            genderLabel.Text = "Gender:";
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Location = new Point(66, 242);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new Size(117, 37);
+            countryLabel.TabIndex = 3;
+            countryLabel.Text = "Country:";
+            // 
             // name
             // 
-            name.AutoSize = true;
-            name.Location = new Point(66, 58);
+            name.Location = new Point(219, 55);
             name.Name = "name";
-            name.Size = new Size(94, 37);
-            name.TabIndex = 0;
-            name.Text = "Name:";
+            name.Size = new Size(461, 43);
+            name.TabIndex = 4;
             // 
-            // label1
+            // email
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(66, 122);
-            label1.Name = "label1";
-            label1.Size = new Size(99, 37);
-            label1.TabIndex = 1;
-            label1.Text = "E-mail:";
+            email.Location = new Point(219, 119);
+            email.Name = "email";
+            email.Size = new Size(461, 43);
+            email.TabIndex = 6;
             // 
-            // label2
+            // country
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(66, 184);
-            label2.Name = "label2";
-            label2.Size = new Size(110, 37);
-            label2.TabIndex = 2;
-            label2.Text = "Gender:";
+            country.Location = new Point(219, 242);
+            country.Name = "country";
+            country.Size = new Size(461, 43);
+            country.TabIndex = 7;
             // 
-            // label3
+            // gender
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(66, 242);
-            label3.Name = "label3";
-            label3.Size = new Size(117, 37);
-            label3.TabIndex = 3;
-            label3.Text = "Country:";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(219, 55);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(461, 43);
-            textBox1.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(219, 119);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(461, 43);
-            textBox3.TabIndex = 6;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(219, 242);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(461, 43);
-            textBox4.TabIndex = 7;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(219, 181);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(461, 45);
-            comboBox1.TabIndex = 8;
+            gender.FormattingEnabled = true;
+            gender.Items.AddRange(new object[] { "Male", "Female", "Nonbinary", "Other" });
+            gender.Location = new Point(219, 181);
+            gender.Name = "gender";
+            gender.Size = new Size(461, 45);
+            gender.TabIndex = 8;
             // 
             // button1
             // 
@@ -130,30 +131,31 @@
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox1);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(gender);
+            Controls.Add(country);
+            Controls.Add(email);
             Controls.Add(name);
+            Controls.Add(countryLabel);
+            Controls.Add(genderLabel);
+            Controls.Add(emailLabel);
+            Controls.Add(nameLabel);
             Name = "UserInformation";
             Text = "Form2";
+            Load += UserInformation_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label name;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private ComboBox comboBox1;
+        private Label nameLabel;
+        private Label emailLabel;
+        private Label genderLabel;
+        private Label countryLabel;
+        private TextBox name;
+        private TextBox email;
+        private TextBox country;
+        private ComboBox gender;
         private Button button1;
         private Button button2;
     }
