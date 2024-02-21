@@ -19,3 +19,4 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-wind
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\HelloWorld.Business.pdb
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.csproj.AssemblyReference.cache
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.csproj.CopyComplete
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.UserInformation.resources

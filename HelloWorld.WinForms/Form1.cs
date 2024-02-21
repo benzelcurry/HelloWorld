@@ -12,7 +12,8 @@ namespace HelloWorld.WinForms
         private void showDetails(object sender, EventArgs e)
         {
             UserInformation userInformation = new();
-            userInformation.Show();
+            userInformation.StartPosition = FormStartPosition.CenterParent;
+            userInformation.ShowDialog();
         }
     }
 }

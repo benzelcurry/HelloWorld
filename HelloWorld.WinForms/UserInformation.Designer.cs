@@ -122,7 +122,6 @@
             button2.TabIndex = 10;
             button2.Text = "Cancel";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += this.button2_Click;
             // 
             // UserInformation
             // 
