@@ -13,12 +13,17 @@ namespace HelloWorld.WinForms
         {
             UserInformation userInformation = new();
             userInformation.StartPosition = FormStartPosition.CenterParent;
-            userInformation.ShowDialog();
+            DialogResult result = userInformation.ShowDialog();
 
-            string text = $"Hello {userInformation.Name}, {Environment.NewLine}" +
-                $"How nice of you to join us! I will send you some information to {userInformation.Email}.";
-
-            textBox1.Text = text;
+            if (result == DialogResult.OK)
+            {
+                textBox1.Text = $"Hello {userInformation.Name}, {Environment.NewLine}" +
+                    $"How nice of you to join us! I will send you some information to {userInformation.Email}.";
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                textBox1.Text = string.Empty;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
