@@ -37,7 +37,7 @@
             country = new TextBox();
             gender = new ComboBox();
             submit = new Button();
-            button2 = new Button();
+            cancel = new Button();
             SuspendLayout();
             // 
             // nameLabel
@@ -116,21 +116,22 @@
             submit.UseVisualStyleBackColor = true;
             submit.Click += submit_Click;
             // 
-            // button2
+            // cancel
             // 
-            button2.Location = new Point(511, 344);
-            button2.Name = "button2";
-            button2.Size = new Size(169, 52);
-            button2.TabIndex = 10;
-            button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = true;
+            cancel.Location = new Point(511, 344);
+            cancel.Name = "cancel";
+            cancel.Size = new Size(169, 52);
+            cancel.TabIndex = 10;
+            cancel.Text = "Cancel";
+            cancel.UseVisualStyleBackColor = true;
+            cancel.Click += cancel_Click;
             // 
             // UserInformation
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
+            Controls.Add(cancel);
             Controls.Add(submit);
             Controls.Add(gender);
             Controls.Add(country);
@@ -158,6 +159,6 @@
         private TextBox country;
         private ComboBox gender;
         private Button submit;
-        private Button button2;
+        private Button cancel;
     }
 }

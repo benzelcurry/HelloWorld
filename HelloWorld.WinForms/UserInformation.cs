@@ -38,6 +38,13 @@ namespace HelloWorld.WinForms
             Country = country.Text;
             Email = email.Text;
 
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
     }
