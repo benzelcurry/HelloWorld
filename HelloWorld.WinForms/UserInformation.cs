@@ -12,6 +12,11 @@ namespace HelloWorld.WinForms
 {
     public partial class UserInformation : Form
     {
+        public string Name { get; set; }
+        public string Gender { get; set; }
+        public string Country { get; set; }
+        public string Email { get; set; }
+
         public UserInformation()
         {
             InitializeComponent();
@@ -24,6 +29,16 @@ namespace HelloWorld.WinForms
             gender.Items.Add("Female");
             gender.Items.Add("Nonbinary");
             gender.Items.Add("Other");
+        }
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            Name = name.Text;
+            Gender = gender.Text;
+            Country = country.Text;
+            Email = email.Text;
+
+            this.Close();
         }
     }
 }

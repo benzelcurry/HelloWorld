@@ -36,7 +36,7 @@
             email = new TextBox();
             country = new TextBox();
             gender = new ComboBox();
-            button1 = new Button();
+            submit = new Button();
             button2 = new Button();
             SuspendLayout();
             // 
@@ -106,14 +106,15 @@
             gender.Size = new Size(461, 45);
             gender.TabIndex = 8;
             // 
-            // button1
+            // submit
             // 
-            button1.Location = new Point(319, 344);
-            button1.Name = "button1";
-            button1.Size = new Size(169, 52);
-            button1.TabIndex = 9;
-            button1.Text = "Submit";
-            button1.UseVisualStyleBackColor = true;
+            submit.Location = new Point(319, 344);
+            submit.Name = "submit";
+            submit.Size = new Size(169, 52);
+            submit.TabIndex = 9;
+            submit.Text = "Submit";
+            submit.UseVisualStyleBackColor = true;
+            submit.Click += submit_Click;
             // 
             // button2
             // 
@@ -130,7 +131,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(submit);
             Controls.Add(gender);
             Controls.Add(country);
             Controls.Add(email);
@@ -156,7 +157,7 @@
         private TextBox email;
         private TextBox country;
         private ComboBox gender;
-        private Button button1;
+        private Button submit;
         private Button button2;
     }
 }
