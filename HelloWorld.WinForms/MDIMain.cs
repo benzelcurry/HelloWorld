@@ -18,5 +18,17 @@ namespace HelloWorld.WinForms
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void userInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new();
+            form1.MdiParent = this;
+            form1.Show();
+        }
     }
 }
