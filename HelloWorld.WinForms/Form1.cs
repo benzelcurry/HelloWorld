@@ -28,7 +28,13 @@ namespace HelloWorld.WinForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            enterDetails.Click += showMoreInfo;
             enterDetails.Click += showDetails;
+        }
+
+        private void showMoreInfo(object? sender, EventArgs e)
+        {
+            MessageBox.Show("Please enter some more information");
         }
     }
 }
