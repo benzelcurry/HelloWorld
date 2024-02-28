@@ -4,6 +4,7 @@ AgeService ageService = new();
 
 try
 {
+    ageService.OnAgeCalculated += AgeService_OnAgeCalculated;
     int currentAge = ageService.CalculateAge(1982);
 
     Console.WriteLine($"You are {currentAge} years old");
@@ -22,4 +23,9 @@ catch (Exception ex)
     {
         Console.WriteLine($"Something went wrong: {ex.Message}");
     }
+}
+
+void AgeService_OnAgeCalculated()
+{
+    Console.WriteLine("Age has been calculated.");
 }
