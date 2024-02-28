@@ -28,7 +28,7 @@ namespace HelloWorld.WinForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            enterDetails.Click += showDetails;
         }
     }
 }
