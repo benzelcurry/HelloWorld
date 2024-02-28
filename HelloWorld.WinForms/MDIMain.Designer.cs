@@ -360,7 +360,7 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, editToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(964, 45);
+            menuStrip1.Size = new Size(2119, 45);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -394,7 +394,7 @@
             // 
             // MDIMain
             // 
-            ClientSize = new Size(964, 913);
+            ClientSize = new Size(2119, 1289);
             Controls.Add(menuStrip1);
             IsMdiContainer = true;
             MainMenuStrip = menuStrip1;

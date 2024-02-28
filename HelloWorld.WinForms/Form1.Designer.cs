@@ -40,7 +40,6 @@
             enterDetails.TabIndex = 0;
             enterDetails.Text = "Enter Details";
             enterDetails.UseVisualStyleBackColor = true;
-            enterDetails.Click += showDetails;
             // 
             // textBox1
             // 
