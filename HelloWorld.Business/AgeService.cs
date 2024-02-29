@@ -10,8 +10,7 @@ namespace HelloWorld.Business
         /// <param name="dob">The date of birth, which is a <see cref="DateTime"/></param>
         /// <returns>The age calculation, which is a <see cref="int"/></returns>
 
-        public delegate void NotifyAgeCalculated();
-        public event NotifyAgeCalculated OnAgeCalculated;
+        public event EventHandler<int> OnAgeCalculated;
 
         public int CalculateAge(DateTime dob)
         {
@@ -33,7 +32,7 @@ namespace HelloWorld.Business
             int age = DateTime.Now.Year - year;
 
             if (OnAgeCalculated != null)
-                OnAgeCalculated.Invoke();
+                OnAgeCalculated.Invoke(this, age);
 
             return age;
         }

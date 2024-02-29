@@ -25,7 +25,7 @@ catch (Exception ex)
     }
 }
 
-void AgeService_OnAgeCalculated()
+void AgeService_OnAgeCalculated(object? sender, int e)
 {
-    Console.WriteLine("Age has been calculated.");
+    Console.WriteLine($"Age has been calculated. The result is {e}.");
 }
