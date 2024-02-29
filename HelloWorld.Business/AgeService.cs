@@ -32,6 +32,9 @@ namespace HelloWorld.Business
 
             int age = DateTime.Now.Year - year;
 
+            if (OnAgeCalculated != null)
+                OnAgeCalculated.Invoke();
+
             return age;
         }
     }
