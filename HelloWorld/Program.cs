@@ -1,6 +1,9 @@
 ﻿using HelloWorld.Business;
 
 AgeService ageService = new();
+MovieService movieService = new();
+
+movieService.Get();
 
 try
 {

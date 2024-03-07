@@ -10,3 +10,4 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\Hell
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\refint\HelloWorld.Business.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\HelloWorld.Business.pdb
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\ref\HelloWorld.Business.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\HelloWorld.Business.csproj.AssemblyReference.cache
