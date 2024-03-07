@@ -10,5 +10,10 @@
             "Trust Server Certificate=False;" +
             "Application Intent=ReadWrite;" +
             "Multi Subnet Failover=False";
+
+        public void Get()
+        {
+            string query = "SELECT * FROM Movies ORDER BY Title";
+        }
     }
 }
