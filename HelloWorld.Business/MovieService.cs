@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using HelloWorld.Business.Models;
+using Microsoft.Data.SqlClient;
 
 namespace HelloWorld.Business
 {
@@ -13,9 +14,10 @@ namespace HelloWorld.Business
             "Application Intent=ReadWrite;" +
             "Multi Subnet Failover=False";
 
-        public void Get()
+        public List<Movie> Get()
         {
             string query = "SELECT * FROM Movies ORDER BY Title";
+            List<Movie> movies = new();
 
             using (SqlConnection connection = new(connectionString))
             {
@@ -28,17 +30,22 @@ namespace HelloWorld.Business
 
                     while (reader.Read())
                     {
-                        Console.WriteLine(reader["Title"]);
-                        Console.WriteLine(reader["ReleaseDate"]);
-                        Console.WriteLine("");
-                        Console.WriteLine(reader["Plot"]);
-                        Console.WriteLine("--------------------------");
+                        Movie movie = new()
+                        {
+                            Id = int.Parse(reader["Id"].ToString()),
+                            Plot = reader["Plot"].ToString(),
+                            ReleaseDate = DateTime.Parse(reader["ReleaseDate"].ToString()),
+                            Seen = bool.Parse(reader["Seen"].ToString()),
+                            Title = reader["Title"].ToString(),
+                        };
+                        movies.Add(movie);
                     }
+
+                    return movies;
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Oops!");
-                    Console.WriteLine(ex.Message);
+                    throw;
                 }
             }
         }
