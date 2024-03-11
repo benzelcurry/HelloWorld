@@ -83,6 +83,7 @@
             Controls.Add(lbMovies);
             Name = "Form1";
             Text = "Movies Library";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
