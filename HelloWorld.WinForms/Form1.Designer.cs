@@ -28,44 +28,69 @@
         /// </summary>
         private void InitializeComponent()
         {
-            enterDetails = new Button();
-            textBox1 = new TextBox();
+            lbMovies = new ListBox();
+            createButton = new Button();
+            deleteButton = new Button();
+            exitButton = new Button();
             SuspendLayout();
             // 
-            // enterDetails
+            // lbMovies
             // 
-            enterDetails.Location = new Point(80, 95);
-            enterDetails.Name = "enterDetails";
-            enterDetails.Size = new Size(241, 52);
-            enterDetails.TabIndex = 0;
-            enterDetails.Text = "Enter Details";
-            enterDetails.UseVisualStyleBackColor = true;
+            lbMovies.FormattingEnabled = true;
+            lbMovies.ItemHeight = 37;
+            lbMovies.Location = new Point(33, 34);
+            lbMovies.Name = "lbMovies";
+            lbMovies.Size = new Size(816, 633);
+            lbMovies.TabIndex = 0;
             // 
-            // textBox1
+            // createButton
             // 
-            textBox1.Location = new Point(76, 216);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(1029, 430);
-            textBox1.TabIndex = 1;
+            createButton.Location = new Point(908, 34);
+            createButton.Name = "createButton";
+            createButton.Size = new Size(200, 56);
+            createButton.TabIndex = 1;
+            createButton.Text = "Create";
+            createButton.UseVisualStyleBackColor = true;
+            // 
+            // deleteButton
+            // 
+            deleteButton.Enabled = false;
+            deleteButton.Location = new Point(908, 111);
+            deleteButton.Name = "deleteButton";
+            deleteButton.Size = new Size(200, 52);
+            deleteButton.TabIndex = 2;
+            deleteButton.Text = "Delete";
+            deleteButton.UseVisualStyleBackColor = true;
+            // 
+            // exitButton
+            // 
+            exitButton.Location = new Point(908, 282);
+            exitButton.Name = "exitButton";
+            exitButton.Size = new Size(200, 52);
+            exitButton.TabIndex = 3;
+            exitButton.Text = "Exit";
+            exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(15F, 37F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1172, 705);
-            Controls.Add(textBox1);
-            Controls.Add(enterDetails);
+            Controls.Add(exitButton);
+            Controls.Add(deleteButton);
+            Controls.Add(createButton);
+            Controls.Add(lbMovies);
             Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Text = "Movies Library";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Button enterDetails;
-        private TextBox textBox1;
+        private ListBox lbMovies;
+        private Button createButton;
+        private Button deleteButton;
+        private Button exitButton;
     }
 }
