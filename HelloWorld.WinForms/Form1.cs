@@ -22,5 +22,15 @@ namespace HelloWorld.WinForms
             lbMovies.DataSource = movieService.Get();
             lbMovies.DisplayMember = "Title";
         }
+
+        private void lbMovies_DoubleClick(object sender, EventArgs e)
+        {
+            Movie selected = (Movie)lbMovies.SelectedItem;
+
+            MessageBox.Show(
+                $"{selected.Title}{Environment.NewLine}{selected.ReleaseDate}" +
+                $"{Environment.NewLine}{Environment.NewLine}{selected.Plot}"
+            );
+        }
     }
 }
