@@ -19,7 +19,6 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-wind
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\HelloWorld.Business.pdb
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.csproj.AssemblyReference.cache
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.csproj.CopyComplete
-C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.UserInformation.resources
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Azure.Core.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Azure.Identity.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
@@ -67,3 +66,4 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-wind
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.NewMovie.resources

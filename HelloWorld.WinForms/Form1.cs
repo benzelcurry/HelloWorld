@@ -32,5 +32,14 @@ namespace HelloWorld.WinForms
                 $"{Environment.NewLine}{Environment.NewLine}{selected.Plot}"
             );
         }
+
+        private void createButton_Click(object sender, EventArgs e)
+        {
+            NewMovie newMovie = new()
+            {
+                StartPosition = FormStartPosition.CenterParent
+            };
+            newMovie.ShowDialog();
+        }
     }
 }
