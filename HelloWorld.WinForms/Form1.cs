@@ -48,5 +48,13 @@ namespace HelloWorld.WinForms
         {
             lbMovies.DataSource = movieService.Get();
         }
+
+        private void lbMovies_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lbMovies.SelectedItems.Count > 0)
+                deleteButton.Enabled = true;
+            else
+                deleteButton.Enabled = false;
+        }
     }
 }

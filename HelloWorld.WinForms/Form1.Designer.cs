@@ -42,6 +42,7 @@
             lbMovies.Name = "lbMovies";
             lbMovies.Size = new Size(816, 633);
             lbMovies.TabIndex = 0;
+            lbMovies.SelectedIndexChanged += lbMovies_SelectedIndexChanged;
             lbMovies.DoubleClick += lbMovies_DoubleClick;
             // 
             // createButton
