@@ -29,7 +29,7 @@ namespace HelloWorld.WinForms
             else
             {
                 movie.Id = Current.Id;
-                movieService.Update(Current);
+                movieService.Update(movie);
             }
 
             DialogResult = DialogResult.OK;
