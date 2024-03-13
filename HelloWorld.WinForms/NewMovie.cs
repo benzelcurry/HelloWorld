@@ -26,5 +26,11 @@ namespace HelloWorld.WinForms
             DialogResult = DialogResult.OK;
             Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
+            Close();
+        }
     }
 }
