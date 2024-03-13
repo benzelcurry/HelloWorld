@@ -134,6 +134,7 @@
             Controls.Add(label1);
             Name = "NewMovie";
             Text = "NewMovie";
+            Load += NewMovie_Load;
             ResumeLayout(false);
             PerformLayout();
         }
