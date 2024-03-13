@@ -87,7 +87,7 @@ namespace HelloWorld.Business
             if (movie.Id <= 0)
                 throw new Exception("Id can't be zero or less.");
 
-            string query = "UPDATE MOVIES SET Title=@Title, Plot=@Plot, ReleaseDate=@ReleaseDate, Seen=@Seen";
+            string query = "UPDATE MOVIES SET Title=@Title, Plot=@Plot, ReleaseDate=@ReleaseDate, Seen=@Seen WHERE Id=@Id";
 
             using (SqlConnection connection = new(connectionString))
             {

@@ -51,11 +51,11 @@ namespace HelloWorld.WinForms
                 chkSeen.Checked = Current.Seen;
                 dtpReleaseDate.Value = Current.ReleaseDate;
 
-                button1.Text = "Update";
+                button2.Text = "Update";
             }
             else
             {
-                button1.Text = "Create";
+                button2.Text = "Create";
             }
         }
     }
