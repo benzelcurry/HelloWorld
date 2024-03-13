@@ -56,5 +56,18 @@ namespace HelloWorld.WinForms
             else
                 deleteButton.Enabled = false;
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            Movie selected = (Movie) lbMovies.SelectedItem;
+
+            DialogResult confirm = MessageBox.Show($"Are you sure you want to delete the movie {selected.Title}?");
+
+            if (confirm == DialogResult.Yes )
+            {
+                movieService.Delete(selected.Id);
+                LoadMovies();
+            }
+        }
     }
 }

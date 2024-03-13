@@ -64,6 +64,7 @@
             deleteButton.TabIndex = 2;
             deleteButton.Text = "Delete";
             deleteButton.UseVisualStyleBackColor = true;
+            deleteButton.Click += deleteButton_Click;
             // 
             // exitButton
             // 
