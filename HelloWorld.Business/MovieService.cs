@@ -69,5 +69,17 @@ namespace HelloWorld.Business
                 command.ExecuteNonQuery();
             }
         }
+
+        public void Delete(int id)
+        {
+            string query = $"DELETE FROM Movies WHERE Id={id}";
+
+            using (SqlConnection connection = new(connectionString))
+            {
+                connection.Open();
+                SqlCommand command = new(query, connection);
+                command.ExecuteNonQuery();
+            }
+        }
     }
 }
