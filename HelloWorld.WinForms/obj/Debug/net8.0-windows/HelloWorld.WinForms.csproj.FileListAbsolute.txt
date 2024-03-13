@@ -36,12 +36,9 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-wind
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
-C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
-C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\System.Memory.Data.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
-C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\System.Security.Cryptography.ProtectedData.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
@@ -64,6 +61,5 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-wind
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
-C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net8.0-windows\HelloWorld.WinForms.NewMovie.resources

@@ -5,8 +5,12 @@ namespace HelloWorld.WinForms
 {
     public partial class Form1 : Form
     {
+        private MovieService movieService;
+
         public Form1()
         {
+            movieService = new();
+
             InitializeComponent();
         }
 
@@ -17,10 +21,8 @@ namespace HelloWorld.WinForms
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MovieService movieService = new();
-
-            lbMovies.DataSource = movieService.Get();
             lbMovies.DisplayMember = "Title";
+            LoadMovies();
         }
 
         private void lbMovies_DoubleClick(object sender, EventArgs e)
@@ -40,6 +42,11 @@ namespace HelloWorld.WinForms
                 StartPosition = FormStartPosition.CenterParent
             };
             newMovie.ShowDialog();
+        }
+
+        private void LoadMovies()
+        {
+            lbMovies.DataSource = movieService.Get();
         }
     }
 }
