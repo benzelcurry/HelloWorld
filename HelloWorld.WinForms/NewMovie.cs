@@ -5,6 +5,8 @@ namespace HelloWorld.WinForms
 {
     public partial class NewMovie : Form
     {
+        public Movie Current {  get; set; }
+
         public NewMovie()
         {
             InitializeComponent();

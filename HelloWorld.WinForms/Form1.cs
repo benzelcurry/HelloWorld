@@ -29,10 +29,13 @@ namespace HelloWorld.WinForms
         {
             Movie selected = (Movie)lbMovies.SelectedItem;
 
-            MessageBox.Show(
-                $"{selected.Title}{Environment.NewLine}{selected.ReleaseDate}" +
-                $"{Environment.NewLine}{Environment.NewLine}{selected.Plot}"
-            );
+            NewMovie newMovie = new();
+            newMovie.Current = selected;
+            newMovie.StartPosition = FormStartPosition.CenterParent;
+            DialogResult result = newMovie.ShowDialog();
+
+            if (result == DialogResult.OK)
+                LoadMovies();
         }
 
         private void createButton_Click(object sender, EventArgs e)
