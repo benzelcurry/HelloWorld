@@ -49,5 +49,16 @@ namespace HelloWorld.Business
                 }
             }
         }
+
+        public void Create(Movie movie)
+        {
+            string query = "INSERT INTO Movies (Title, Plot, ReleaseDate, Seen) " +
+                           "VALUES (@Title, @Plot, @ReleaseDate, @Seen)";
+
+            using (SqlConnection connection = new(connectionString))
+            {
+                SqlCommand command = new(query, connection);
+            }
+        }
     }
 }
