@@ -44,7 +44,10 @@ namespace HelloWorld.WinForms
             {
                 StartPosition = FormStartPosition.CenterParent
             };
-            newMovie.ShowDialog();
+            DialogResult result = newMovie.ShowDialog();
+
+            if (result == DialogResult.OK)
+                LoadMovies();
         }
 
         private void LoadMovies()
