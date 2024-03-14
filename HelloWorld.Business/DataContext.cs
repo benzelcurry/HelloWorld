@@ -1,9 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using HelloWorld.Business.Models;
 
 namespace HelloWorld.Business
 {
     public class DataContext : DbContext
     {
+        public DbSet<Movie> Movies { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;" +
