@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TRLg/SF+m471XTWqA8d3rAdP+FZP8+soS1maNI4scU/C92pR2AtS6nfDioxXiALJ0cXZR8SKsmIeyVYyCRUQzA==",
+  "dgSpecHash": "skksfRSw6NeBnufgdj2Ze8q47cCMC9uJ6QbdEqvlq0aTTm1kPUsz98JgSn0O7kVj1Vgv1Fa+s1RM6s/zWPdWdw==",
   "success": true,
   "projectFilePath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [
@@ -13,8 +13,11 @@
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
+    "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.3\\microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
+    "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.3\\microsoft.entityframeworkcore.sqlserver.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",

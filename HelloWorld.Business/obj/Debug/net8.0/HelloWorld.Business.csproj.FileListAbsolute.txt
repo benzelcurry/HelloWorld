@@ -11,3 +11,5 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\refi
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\HelloWorld.Business.pdb
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\ref\HelloWorld.Business.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\HelloWorld.Business.csproj.AssemblyReference.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\bin\Debug\net8.0\HelloWorld.Business.runtimeconfig.json
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Business\obj\Debug\net8.0\HelloWorld.Business.genruntimeconfig.cache
