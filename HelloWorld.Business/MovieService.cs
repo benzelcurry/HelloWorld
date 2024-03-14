@@ -26,14 +26,10 @@ namespace HelloWorld.Business
 
         public void Delete(int id)
         {
-            string query = $"DELETE FROM Movies WHERE Id={id}";
+            Movie movieToDelete = dataContext.Movies.Single(x => x.Id == id);
 
-            using (SqlConnection connection = new(connectionString))
-            {
-                connection.Open();
-                SqlCommand command = new(query, connection);
-                command.ExecuteNonQuery();
-            }
+            dataContext.Remove(movieToDelete);
+            dataContext.SaveChanges();
         }
 
         public void Update(Movie movie)
