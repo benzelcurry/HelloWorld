@@ -35,21 +35,15 @@ namespace HelloWorld.Business
         public void Update(Movie movie)
         {
             if (movie.Id <= 0)
-                throw new Exception("Id can't be zero or less.");
+                throw new Exception("Movie does not exist.");
 
-            string query = "UPDATE MOVIES SET Title=@Title, Plot=@Plot, ReleaseDate=@ReleaseDate, Seen=@Seen WHERE Id=@Id";
+            Movie movieToUpdate = dataContext.Movies.Single(x => x.Id == movie.Id);
 
-            using (SqlConnection connection = new(connectionString))
-            {
-                connection.Open();
-                SqlCommand command = new(query, connection);
-                command.Parameters.Add("@Title", System.Data.SqlDbType.VarChar).Value = movie.Title;
-                command.Parameters.Add("@Plot", System.Data.SqlDbType.VarChar).Value = movie.Plot;
-                command.Parameters.Add("@ReleaseDate", System.Data.SqlDbType.DateTime2).Value = movie.ReleaseDate;
-                command.Parameters.Add("@Seen", System.Data.SqlDbType.Bit).Value = movie.Seen;
-                command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = movie.Id;
-                command.ExecuteNonQuery();
-            }
+            movieToUpdate.Seen = movie.Seen;
+            movieToUpdate.Title = movie.Title;
+            movieToUpdate.Plot = movie.Plot;
+
+            dataContext.SaveChanges();
         }
     }
 }
