@@ -20,22 +20,8 @@ namespace HelloWorld.Business
 
         public void Create(Movie movie)
         {
-            string query = "INSERT INTO Movies (Title, Plot, ReleaseDate, Seen) " +
-                           "VALUES (@Title, @Plot, @ReleaseDate, @Seen)";
-
-            using (SqlConnection connection = new(connectionString))
-            {
-                SqlCommand command = new(query, connection);
-
-                command.Parameters.Add("@Title", System.Data.SqlDbType.VarChar).Value = movie.Title;
-                command.Parameters.Add("@Plot", System.Data.SqlDbType.VarChar).Value = movie.Plot;
-                command.Parameters.Add("@ReleaseDate", System.Data.SqlDbType.DateTime2).Value = movie.ReleaseDate;
-                command.Parameters.Add("@Seen", System.Data.SqlDbType.Bit).Value = movie.Seen;
-
-                connection.Open();
-
-                command.ExecuteNonQuery();
-            }
+            dataContext.Movies.Add(movie);
+            dataContext.SaveChanges();
         }
 
         public void Delete(int id)
