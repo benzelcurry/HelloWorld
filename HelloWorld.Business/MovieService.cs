@@ -5,49 +5,17 @@ namespace HelloWorld.Business
 {
     public class MovieService
     {
-        private string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;" +
-            "Initial Catalog=MovieLibrary;" +
-            "Integrated Security=True;" +
-            "Connect Timeout=30;" +
-            "Encrypt=False;" +
-            "Trust Server Certificate=False;" +
-            "Application Intent=ReadWrite;" +
-            "Multi Subnet Failover=False";
+        private DataContext dataContext;
+
+        public MovieService()
+        {
+            dataContext = new DataContext();
+        }
 
         public List<Movie> Get()
         {
-            string query = "SELECT * FROM Movies ORDER BY Title";
-            List<Movie> movies = new();
-
-            using (SqlConnection connection = new(connectionString))
-            {
-                SqlCommand command = new(query, connection);
-
-                try
-                {
-                    connection.Open();
-                    SqlDataReader reader = command.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        Movie movie = new()
-                        {
-                            Id = int.Parse(reader["Id"].ToString()),
-                            Plot = reader["Plot"].ToString(),
-                            ReleaseDate = DateTime.Parse(reader["ReleaseDate"].ToString()),
-                            Seen = bool.Parse(reader["Seen"].ToString()),
-                            Title = reader["Title"].ToString(),
-                        };
-                        movies.Add(movie);
-                    }
-
-                    return movies;
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
-            }
+            List<Movie> movies = dataContext.Movies.ToList();
+            return movies;
         }
 
         public void Create(Movie movie)
