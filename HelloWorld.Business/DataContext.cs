@@ -23,7 +23,7 @@ namespace HelloWorld.Business
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Movie>().HasData()(new Movie()
+            modelBuilder.Entity<Movie>().HasData(new Movie()
             {
                 Id = 3,
                 Plot = "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
