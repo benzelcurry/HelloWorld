@@ -48,16 +48,28 @@ namespace HelloWorld.Business
 
         public void Update(Movie movie)
         {
-            if (movie.Id <= 0)
-                throw new Exception("Movie does not exist.");
+            using (IDbContextTransaction transaction = dataContext.Database.BeginTransaction())
+            {
+                try
+                {
+                    if (movie.Id <= 0)
+                        throw new Exception("Movie does not exist.");
 
-            Movie movieToUpdate = dataContext.Movies.Single(x => x.Id == movie.Id);
+                    Movie movieToUpdate = dataContext.Movies.Single(x => x.Id == movie.Id);
 
-            movieToUpdate.Seen = movie.Seen;
-            movieToUpdate.Title = movie.Title;
-            movieToUpdate.Plot = movie.Plot;
+                    movieToUpdate.Seen = movie.Seen;
+                    movieToUpdate.Title = movie.Title;
+                    movieToUpdate.Plot = movie.Plot;
 
-            dataContext.SaveChanges();
+                    dataContext.SaveChanges();
+
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                }
+            }
         }
     }
 }
