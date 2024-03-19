@@ -76,3 +76,4 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-wind
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.InMemory.dll
