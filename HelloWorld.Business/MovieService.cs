@@ -1,5 +1,7 @@
 ﻿using HelloWorld.Business.Models;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore.Storage;
+using System.Transactions;
 
 namespace HelloWorld.Business
 {
@@ -26,10 +28,22 @@ namespace HelloWorld.Business
 
         public void Delete(int id)
         {
-            Movie movieToDelete = dataContext.Movies.Single(x => x.Id == id);
+            using (IDbContextTransaction transaction = dataContext.Database.BeginTransaction())
+            {
+                try
+                {
+                    Movie movieToDelete = dataContext.Movies.Single(x => x.Id == id);
 
-            dataContext.Remove(movieToDelete);
-            dataContext.SaveChanges();
+                    dataContext.Remove(movieToDelete);
+                    dataContext.SaveChanges();
+
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                }
+            }
         }
 
         public void Update(Movie movie)
