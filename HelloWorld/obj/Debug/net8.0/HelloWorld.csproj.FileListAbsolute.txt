@@ -68,3 +68,4 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\bin\Debug\net8.0\Microsoft.Ext
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
