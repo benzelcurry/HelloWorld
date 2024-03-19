@@ -6,6 +6,7 @@ namespace HelloWorld.Business
     public class DataContext : DbContext
     {
         public DbSet<Movie> Movies { get; set; }
+        public DbSet<Genre> Genres { get; set; }
 
         //public DataContext()
         //{
@@ -62,6 +63,27 @@ namespace HelloWorld.Business
                 ReleaseDate = new DateTime(2009, 05, 29),
                 Seen = false,
                 Title = "Up"
+            });
+
+            modelBuilder.Entity<Genre>().HasData(new Genre()
+            {
+                Id = 1,
+                Name = "Action"
+            },
+            new Genre()
+            {
+                Id = 2,
+                Name = "Horror"
+            },
+            new Genre()
+            {
+                Id = 3,
+                Name = "Humor"
+            },
+            new Genre()
+            {
+                Id = 4,
+                Name = "SciFi"
             });
         }
     }
