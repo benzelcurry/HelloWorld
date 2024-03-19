@@ -9,16 +9,18 @@ namespace HelloWorld.Business
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;" +
-            "Initial Catalog=MoviesLibrary;" +
-            "Integrated Security=True;" +
-            "Connect Timeout=30;" +
-            "Encrypt=False;" +
-            "Trust Server Certificate=False;" +
-            "Application Intent=ReadWrite;" +
-            "Multi Subnet Failover=False";
+            //string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;" +
+            //"Initial Catalog=MoviesLibrary;" +
+            //"Integrated Security=True;" +
+            //"Connect Timeout=30;" +
+            //"Encrypt=False;" +
+            //"Trust Server Certificate=False;" +
+            //"Application Intent=ReadWrite;" +
+            //"Multi Subnet Failover=False";
 
-            optionsBuilder.UseSqlServer(connectionString);
+            //optionsBuilder.UseSqlServer(connectionString);
+
+            optionsBuilder.UseInMemoryDatabase("HelloWorldDatabase");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

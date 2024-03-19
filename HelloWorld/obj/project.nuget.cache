@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "skksfRSw6NeBnufgdj2Ze8q47cCMC9uJ6QbdEqvlq0aTTm1kPUsz98JgSn0O7kVj1Vgv1Fa+s1RM6s/zWPdWdw==",
+  "dgSpecHash": "EFg4NZrTZ42MG3Y0ejABx2zHdP+JafTQ9sLrRkGdEmp/3c3L/mfS9Uqwgoxm2WWqz/h1gDybUqrzvffGWFp5OA==",
   "success": true,
   "projectFilePath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.3\\microsoft.entityframeworkcore.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
+    "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.3\\microsoft.entityframeworkcore.inmemory.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.3\\microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.3\\microsoft.entityframeworkcore.sqlserver.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",

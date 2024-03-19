@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "l5xqghtX+K6QsOXDCsWX3BwV8//W4FoJMnWSQxTUQxDDjyRWkA2mnvr9ueKTXYqHRzq2H769SmIgO38pMmGHBg==",
+  "dgSpecHash": "5U752ZPlCskccNdnTZO8T+2qtBqccNyhAh8fR84Xf7ErVxmWu8/kHvXFaCQdulYZxctUs3uEsx/2/34NITqGSA==",
   "success": true,
   "projectFilePath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld.Business\\HelloWorld.Business.csproj",
   "expectedPackageFiles": [
@@ -20,6 +20,7 @@
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.3\\microsoft.entityframeworkcore.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.3\\microsoft.entityframeworkcore.analyzers.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.3\\microsoft.entityframeworkcore.design.8.0.3.nupkg.sha512",
+    "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.3\\microsoft.entityframeworkcore.inmemory.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.3\\microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.3\\microsoft.entityframeworkcore.sqlserver.8.0.3.nupkg.sha512",
     "C:\\Users\\BenAW\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.3\\microsoft.entityframeworkcore.tools.8.0.3.nupkg.sha512",
