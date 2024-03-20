@@ -10,5 +10,7 @@ namespace HelloWorld.Business.Models
         public string Plot {  get; set; }
         public DateTime ReleaseDate { get; set; }
         public bool Seen { get; set; }
+        public int GenreId { get; set; }
+        public Genre Genre { get; set; }
     }
 }
