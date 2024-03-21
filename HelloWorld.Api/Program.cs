@@ -1,3 +1,6 @@
+using HelloWorld.Business;
+using HelloWorld.Business.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -21,5 +24,15 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Begin HTTP routes
+
+app.MapGet("/api/movies", () =>
+{
+    MovieService movieService = new();
+    List<Movie> movies = movieService.Get();
+
+    return Results.Ok(movies);
+});
 
 app.Run();
