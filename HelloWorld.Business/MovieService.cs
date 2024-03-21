@@ -1,7 +1,6 @@
 ﻿using HelloWorld.Business.Models;
-using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using System.Transactions;
 
 namespace HelloWorld.Business
 {
@@ -16,7 +15,7 @@ namespace HelloWorld.Business
 
         public List<Movie> Get()
         {
-            List<Movie> movies = dataContext.Movies.ToList();
+            List<Movie> movies = dataContext.Movies.Include(x => x.Genre).ToList();
             return movies;
         }
 
@@ -52,16 +51,11 @@ namespace HelloWorld.Business
             {
                 try
                 {
-                    if (movie.Id <= 0)
-                        throw new Exception("Movie does not exist.");
-
                     Movie movieToUpdate = dataContext.Movies.Single(x => x.Id == movie.Id);
 
                     movieToUpdate.Seen = movie.Seen;
                     movieToUpdate.Title = movie.Title;
                     movieToUpdate.Plot = movie.Plot;
-
-                    dataContext.SaveChanges();
 
                     transaction.Commit();
                 }

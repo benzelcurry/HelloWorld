@@ -12,7 +12,7 @@ namespace HelloWorld.WinForms
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             MovieService movieService = new();
 
@@ -29,14 +29,14 @@ namespace HelloWorld.WinForms
             else
             {
                 movie.Id = Current.Id;
-                movieService.Update(movie);
+                movieService.Update(Current);
             }
 
             DialogResult = DialogResult.OK;
             Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
             Close();
@@ -51,12 +51,10 @@ namespace HelloWorld.WinForms
                 chkSeen.Checked = Current.Seen;
                 dtpReleaseDate.Value = Current.ReleaseDate;
 
-                button2.Text = "Update";
+                button1.Text = "Update";
             }
             else
-            {
-                button2.Text = "Create";
-            }
+                button1.Text = "Create";
         }
     }
 }

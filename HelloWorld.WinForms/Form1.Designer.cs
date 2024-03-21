@@ -28,74 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbMovies = new ListBox();
-            createButton = new Button();
-            deleteButton = new Button();
-            exitButton = new Button();
+            lbMovies=new ListBox();
+            button1=new Button();
+            btnDelete=new Button();
+            button3=new Button();
             SuspendLayout();
             // 
             // lbMovies
             // 
-            lbMovies.FormattingEnabled = true;
-            lbMovies.ItemHeight = 37;
-            lbMovies.Location = new Point(33, 34);
-            lbMovies.Name = "lbMovies";
-            lbMovies.Size = new Size(816, 633);
-            lbMovies.TabIndex = 0;
-            lbMovies.SelectedIndexChanged += lbMovies_SelectedIndexChanged;
-            lbMovies.DoubleClick += lbMovies_DoubleClick;
+            lbMovies.FormattingEnabled=true;
+            lbMovies.ItemHeight=25;
+            lbMovies.Location=new Point(12, 12);
+            lbMovies.Name="lbMovies";
+            lbMovies.Size=new Size(546, 479);
+            lbMovies.TabIndex=0;
+            lbMovies.SelectedIndexChanged+=lbMovies_SelectedIndexChanged;
+            lbMovies.DoubleClick+=lbMovies_DoubleClick;
             // 
-            // createButton
+            // button1
             // 
-            createButton.Location = new Point(908, 34);
-            createButton.Name = "createButton";
-            createButton.Size = new Size(200, 56);
-            createButton.TabIndex = 1;
-            createButton.Text = "Create";
-            createButton.UseVisualStyleBackColor = true;
-            createButton.Click += createButton_Click;
+            button1.Location=new Point(564, 12);
+            button1.Name="button1";
+            button1.Size=new Size(112, 34);
+            button1.TabIndex=1;
+            button1.Text="Create";
+            button1.UseVisualStyleBackColor=true;
+            button1.Click+=button1_Click;
             // 
-            // deleteButton
+            // btnDelete
             // 
-            deleteButton.Enabled = false;
-            deleteButton.Location = new Point(908, 111);
-            deleteButton.Name = "deleteButton";
-            deleteButton.Size = new Size(200, 52);
-            deleteButton.TabIndex = 2;
-            deleteButton.Text = "Delete";
-            deleteButton.UseVisualStyleBackColor = true;
-            deleteButton.Click += deleteButton_Click;
+            btnDelete.Enabled=false;
+            btnDelete.Location=new Point(564, 52);
+            btnDelete.Name="btnDelete";
+            btnDelete.Size=new Size(112, 34);
+            btnDelete.TabIndex=2;
+            btnDelete.Text="Delete";
+            btnDelete.UseVisualStyleBackColor=true;
+            btnDelete.Click+=btnDelete_Click;
             // 
-            // exitButton
+            // button3
             // 
-            exitButton.Location = new Point(908, 282);
-            exitButton.Name = "exitButton";
-            exitButton.Size = new Size(200, 52);
-            exitButton.TabIndex = 3;
-            exitButton.Text = "Exit";
-            exitButton.UseVisualStyleBackColor = true;
-            exitButton.Click += exitButton_Click;
+            button3.Location=new Point(564, 144);
+            button3.Name="button3";
+            button3.Size=new Size(112, 34);
+            button3.TabIndex=3;
+            button3.Text="Exit";
+            button3.UseVisualStyleBackColor=true;
+            button3.Click+=button3_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(15F, 37F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1172, 705);
-            Controls.Add(exitButton);
-            Controls.Add(deleteButton);
-            Controls.Add(createButton);
+            AutoScaleDimensions=new SizeF(10F, 25F);
+            AutoScaleMode=AutoScaleMode.Font;
+            ClientSize=new Size(691, 512);
+            Controls.Add(button3);
+            Controls.Add(btnDelete);
+            Controls.Add(button1);
             Controls.Add(lbMovies);
-            Name = "Form1";
-            Text = "Movies Library";
-            Load += Form1_Load;
+            Name="Form1";
+            Text="Movies Library";
+            Load+=Form1_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
         private ListBox lbMovies;
-        private Button createButton;
-        private Button deleteButton;
-        private Button exitButton;
+        private Button button1;
+        private Button btnDelete;
+        private Button button3;
     }
 }

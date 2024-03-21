@@ -2,13 +2,13 @@
 using HelloWorld.Business.Models;
 
 MovieService movieService = new();
+List<Movie> movies = movieService.Get();
 
-List<Movie> moviesList =  movieService.Get();
-
-foreach (Movie movie in moviesList)
+foreach (Movie movie in movies)
 {
     Console.WriteLine(movie.Title);
-    Console.WriteLine(movie.ReleaseDate);
+    Console.WriteLine(movie.ReleaseDate.ToString());
+    Console.WriteLine("");
     Console.WriteLine(movie.Plot);
-    Console.WriteLine("------------------------------");
+    Console.WriteLine("----------------------");
 }

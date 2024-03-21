@@ -14,7 +14,7 @@ namespace HelloWorld.WinForms
             InitializeComponent();
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -34,11 +34,11 @@ namespace HelloWorld.WinForms
             newMovie.StartPosition = FormStartPosition.CenterParent;
             DialogResult result = newMovie.ShowDialog();
 
-            if (result == DialogResult.OK)
+            if(result == DialogResult.OK)
                 LoadMovies();
         }
 
-        private void createButton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             NewMovie newMovie = new()
             {
@@ -58,18 +58,18 @@ namespace HelloWorld.WinForms
         private void lbMovies_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lbMovies.SelectedItems.Count > 0)
-                deleteButton.Enabled = true;
+                btnDelete.Enabled = true;
             else
-                deleteButton.Enabled = false;
+                btnDelete.Enabled = true;
         }
 
-        private void deleteButton_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            Movie selected = (Movie) lbMovies.SelectedItem;
+            Movie selected = (Movie)lbMovies.SelectedItem;
 
-            DialogResult confirm = MessageBox.Show($"Are you sure you want to delete the movie {selected.Title}?");
+            DialogResult confirm = MessageBox.Show($"Are you sure you want to delete the movie {selected.Title}?", "Confirm delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if (confirm == DialogResult.Yes )
+            if (confirm == DialogResult.Yes)
             {
                 movieService.Delete(selected.Id);
                 LoadMovies();
