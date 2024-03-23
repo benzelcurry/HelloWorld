@@ -1,5 +1,6 @@
 using HelloWorld.Business;
 using HelloWorld.Business.Models;
+using System.Text.Json;
 
 namespace HelloWorld.WinForms
 {
@@ -52,7 +53,20 @@ namespace HelloWorld.WinForms
 
         private void LoadMovies()
         {
-            lbMovies.DataSource = movieService.Get();
+            List<Movie> movies = new();
+
+            using (HttpClient client = new())
+            {
+                HttpResponseMessage response = client.GetAsync("https://localhost:7086/api/movies").Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string content = response.Content.ReadAsStringAsync().Result;
+                    movies = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Movie>>(content);
+                }
+                else
+                    Console.WriteLine("Error while getting the information from the API.");
+            }
         }
 
         private void lbMovies_SelectedIndexChanged(object sender, EventArgs e)
