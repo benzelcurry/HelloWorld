@@ -82,8 +82,18 @@ namespace HelloWorld.WinForms
 
             if (confirm == DialogResult.Yes)
             {
-                movieService.Delete(selected.Id);
-                LoadMovies();
+                //movieService.Delete(selected.Id);
+                //LoadMovies();
+
+                using (HttpClient client = new())
+                {
+                    HttpResponseMessage response = client.DeleteAsync($"https://localhost:7086/api/movies/{selected.Id}").Result;
+
+                    if (response.IsSuccessStatusCode)
+                        LoadMovies();
+                    else
+                        MessageBox.Show("Error while getting the information from the API");
+                }
             }
         }
     }
