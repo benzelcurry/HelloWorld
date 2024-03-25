@@ -53,19 +53,16 @@ namespace HelloWorld.WinForms
 
         private void LoadMovies()
         {
-            List<Movie> movies = new();
-
             using (HttpClient client = new())
             {
                 HttpResponseMessage response = client.GetAsync("https://localhost:7086/api/movies").Result;
-
                 if (response.IsSuccessStatusCode)
                 {
                     string content = response.Content.ReadAsStringAsync().Result;
-                    movies = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Movie>>(content);
+                    lbMovies.DataSource = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Movie>>(content);
                 }
                 else
-                    Console.WriteLine("Error while getting the information from the API.");
+                    MessageBox.Show("Error while getting the information from the API");
             }
         }
 

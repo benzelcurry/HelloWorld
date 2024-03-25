@@ -59,3 +59,4 @@ C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net7.0-wind
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net7.0-windows\HelloWorld.WinForms.pdb
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net7.0-windows\HelloWorld.WinForms.genruntimeconfig.cache
 C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\obj\Debug\net7.0-windows\ref\HelloWorld.WinForms.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.WinForms\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
