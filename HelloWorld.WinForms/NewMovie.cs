@@ -1,5 +1,6 @@
 ﻿using HelloWorld.Business;
 using HelloWorld.Business.Models;
+using System.Text;
 
 namespace HelloWorld.WinForms
 {
@@ -24,12 +25,34 @@ namespace HelloWorld.WinForms
                 Title = txtTitle.Text,
             };
 
+            //if (Current == null)
+            //    movieService.Create(movie);
+            //else
+            //{
+            //    movie.Id = Current.Id;
+            //    movieService.Update(Current);
+            //}
+
             if (Current == null)
-                movieService.Create(movie);
-            else
             {
-                movie.Id = Current.Id;
-                movieService.Update(Current);
+                using (HttpClient client = new())
+                {
+                    string jsonData = Newtonsoft.Json.JsonConvert.SerializeObject(movie);
+
+                    StringContent content = new(jsonData, Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = client.PostAsync("https://localhost:7086/api/movies", content).Result;
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Something went wrong while saving the movie");
+                        DialogResult = DialogResult.Cancel;
+                    }
+                    else
+                    {
+                        DialogResult = DialogResult.OK;
+                    }
+                }
             }
 
             DialogResult = DialogResult.OK;
