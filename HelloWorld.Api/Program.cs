@@ -51,7 +51,7 @@ app.MapPost("/api/movies", (Movie movie) =>
     return Results.NoContent();
 });
 
-app.MapPut("/api/movies/{movie.id:int}", (Movie movie) =>
+app.MapPut("/api/movies/", (Movie movie) =>
 {
     MovieService movieService = new();
     movieService.Update(movie);
