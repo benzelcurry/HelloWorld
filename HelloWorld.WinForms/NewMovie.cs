@@ -54,6 +54,29 @@ namespace HelloWorld.WinForms
                     }
                 }
             }
+            else
+            {
+                movie.Id = Current.Id;
+
+                using (HttpClient client = new())
+                {
+                    string jsonData = Newtonsoft.Json.JsonConvert.SerializeObject(movie);
+
+                    StringContent content = new(jsonData, Encoding.UTF8, "application/json");
+
+                    HttpResponseMessage response = client.UpdateAsync("https://localhost:7086/api/movies", content).Result;
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Something went wrong while saving the movie");
+                        DialogResult = DialogResult.Cancel;
+                    }
+                    else
+                    {
+                        DialogResult = DialogResult.OK;
+                    }
+                }
+            }
 
             DialogResult = DialogResult.OK;
             Close();
