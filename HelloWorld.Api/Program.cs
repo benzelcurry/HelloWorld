@@ -43,4 +43,12 @@ app.MapDelete("/api/movies/{id:int}", (int id) =>
     return Results.NoContent();
 });
 
+app.MapPost("/api/movies", (Movie movie) =>
+{
+    MovieService movieService = new();
+    movieService.Create(movie);
+
+    return Results.NoContent();
+});
+
 app.Run();
