@@ -35,4 +35,12 @@ app.MapGet("/api/movies", () =>
     return Results.Ok(movies);
 });
 
+app.MapDelete("/api/movies/{id:int}", (int id) =>
+{
+    MovieService movieService = new();
+    movieService.Delete(id);
+
+    return Results.NoContent();
+});
+
 app.Run();
