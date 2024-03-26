@@ -9,9 +9,9 @@ namespace HelloWorld.Business
     {
         private DataContext dataContext;
 
-        public MovieService()
+        public MovieService(DataContext dataContext)
         {
-            dataContext = new DataContext();
+            this.dataContext = dataContext;
         }
 
         public List<Movie> Get()
