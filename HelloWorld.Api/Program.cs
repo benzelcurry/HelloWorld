@@ -13,7 +13,7 @@ builder.Services.AddDbContext<DataContext>(o => o.UseSqlServer("Data Source=(loc
         "Encrypt=False;" +
         "Trust Server Certificate=False;" +
         "Application Intent=ReadWrite;" +
-        "Multi Subnet Failover=False"));
+        "Multi Subnet Failover=False"), ServiceLifetime.Transient);
 builder.Services.AddScoped<IMovieService, MovieService>();
 
 var app = builder.Build();
