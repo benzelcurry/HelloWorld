@@ -1,10 +1,19 @@
 using HelloWorld.Business;
 using HelloWorld.Business.Interfaces;
 using HelloWorld.Business.Models;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<DataContext>(o => o.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;" +
+        "Initial Catalog=MoviesLibrary;" +
+        "Integrated Security=True;" +
+        "Connect Timeout=30;" +
+        "Encrypt=False;" +
+        "Trust Server Certificate=False;" +
+        "Application Intent=ReadWrite;" +
+        "Multi Subnet Failover=False"));
 builder.Services.AddScoped<IMovieService, MovieService>();
 
 var app = builder.Build();
