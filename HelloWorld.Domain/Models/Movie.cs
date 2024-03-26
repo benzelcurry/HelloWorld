@@ -1,12 +1,12 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace HelloWorld.Business.Models;
+namespace HelloWorld.Domain.Models;
 
 public class Movie
 {
     public int Id { get; set; }
     [Required]
+
     public string Title { get; set; }
     public string Plot { get; set; }
     public DateTime ReleaseDate { get; set; }

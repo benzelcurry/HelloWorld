@@ -1,0 +1,16 @@
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\bin\Debug\net8.0\HelloWorld.Domain.deps.json
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\bin\Debug\net8.0\HelloWorld.Domain.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\bin\Debug\net8.0\HelloWorld.Domain.pdb
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\bin\Debug\net8.0\HelloWorld.Business.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\bin\Debug\net8.0\HelloWorld.Business.pdb
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.csproj.AssemblyReference.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.AssemblyInfoInputs.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.AssemblyInfo.cs
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.csproj.CoreCompileInputs.cache
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.sourcelink.json
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.csproj.CopyComplete
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\refint\HelloWorld.Domain.dll
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\HelloWorld.Domain.pdb
+C:\Users\BenAW\source\repos\HelloWorld\HelloWorld.Domain\obj\Debug\net8.0\ref\HelloWorld.Domain.dll
