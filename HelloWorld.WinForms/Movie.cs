@@ -13,4 +13,9 @@ public class Movie
     public bool Seen { get; set; }
     public int GenreId { get; set; }
     public virtual Genre Genre { get; set; }
+
+    public static implicit operator Movie?(Business.Models.Movie? v)
+    {
+        throw new NotImplementedException();
+    }
 }
