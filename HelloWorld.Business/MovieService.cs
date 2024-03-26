@@ -1,10 +1,11 @@
 ﻿using HelloWorld.Business.Models;
+using HelloWorld.Business.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
 namespace HelloWorld.Business
 {
-    public class MovieService
+    public class MovieService : IMovieService
     {
         private DataContext dataContext;
 
