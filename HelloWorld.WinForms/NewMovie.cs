@@ -1,7 +1,4 @@
-﻿using Azure;
-using HelloWorld.Business;
-using HelloWorld.Business.Models;
-using System.Text;
+﻿using System.Text;
 
 namespace HelloWorld.WinForms
 {
@@ -16,10 +13,9 @@ namespace HelloWorld.WinForms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MovieService movieService = new();
-
             Movie movie = new()
             {
+                Id = Current == null ? 0 : Current.Id,
                 Plot = txtPlot.Text,
                 ReleaseDate = dtpReleaseDate.Value,
                 Seen = chkSeen.Checked,
@@ -28,7 +24,7 @@ namespace HelloWorld.WinForms
 
             string jsonData = Newtonsoft.Json.JsonConvert.SerializeObject(movie);
             StringContent content = new(jsonData, Encoding.UTF8, "application/json");
-            string apiUrl = "https://localhost:7086/api/movies";
+            string apiUrl = "https://localhost:7133/api/movies";
 
             using (HttpClient client = new())
             {
@@ -48,7 +44,6 @@ namespace HelloWorld.WinForms
                     DialogResult = DialogResult.OK;
             }
 
-            DialogResult = DialogResult.OK;
             Close();
         }
 

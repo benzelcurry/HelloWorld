@@ -1,6 +1,4 @@
 using HelloWorld.Business;
-using HelloWorld.Business.Models;
-using System.Text.Json;
 
 namespace HelloWorld.WinForms
 {
@@ -28,14 +26,14 @@ namespace HelloWorld.WinForms
 
         private void lbMovies_DoubleClick(object sender, EventArgs e)
         {
-            Movie selected = (Movie)lbMovies.SelectedItem;
+            Business.Models.Movie selected = (Business.Models.Movie)lbMovies.SelectedItem;
 
             NewMovie newMovie = new();
             newMovie.Current = selected;
             newMovie.StartPosition = FormStartPosition.CenterParent;
             DialogResult result = newMovie.ShowDialog();
 
-            if(result == DialogResult.OK)
+            if (result == DialogResult.OK)
                 LoadMovies();
         }
 
@@ -53,9 +51,10 @@ namespace HelloWorld.WinForms
 
         private void LoadMovies()
         {
-            using (HttpClient client = new())
+            using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = client.GetAsync("https://localhost:7086/api/movies").Result;
+                HttpResponseMessage response = client.GetAsync("https://localhost:7133/api/movies").Result;
+
                 if (response.IsSuccessStatusCode)
                 {
                     string content = response.Content.ReadAsStringAsync().Result;
@@ -82,12 +81,9 @@ namespace HelloWorld.WinForms
 
             if (confirm == DialogResult.Yes)
             {
-                //movieService.Delete(selected.Id);
-                //LoadMovies();
-
-                using (HttpClient client = new())
+                using (HttpClient client = new HttpClient())
                 {
-                    HttpResponseMessage response = client.DeleteAsync($"https://localhost:7086/api/movies/{selected.Id}").Result;
+                    HttpResponseMessage response = client.DeleteAsync($"https://localhost:7133/api/movies/{selected.Id}").Result;
 
                     if (response.IsSuccessStatusCode)
                         LoadMovies();

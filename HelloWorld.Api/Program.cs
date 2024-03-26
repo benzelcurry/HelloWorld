@@ -2,17 +2,11 @@ using HelloWorld.Business;
 using HelloWorld.Business.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -20,12 +14,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-// Begin HTTP routes
 
 app.MapGet("/api/movies", () =>
 {
@@ -47,14 +35,6 @@ app.MapPost("/api/movies", (Movie movie) =>
 {
     MovieService movieService = new();
     movieService.Create(movie);
-
-    return Results.NoContent();
-});
-
-app.MapPut("/api/movies/", (Movie movie) =>
-{
-    MovieService movieService = new();
-    movieService.Update(movie);
 
     return Results.NoContent();
 });

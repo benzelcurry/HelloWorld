@@ -1,11 +1,10 @@
-﻿using HelloWorld.Business.Models;
-using System.Text.Json;
+﻿using HelloWorld;
 
 List<Movie> movies = new();
 
-using (HttpClient client = new())
+using (HttpClient client = new HttpClient())
 {
-    HttpResponseMessage response = await client.GetAsync("https://localhost:7086/api/movies");
+    HttpResponseMessage response = await client.GetAsync("https://localhost:7133/api/movies");
 
     if (response.IsSuccessStatusCode)
     {
@@ -13,7 +12,7 @@ using (HttpClient client = new())
         movies = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Movie>>(content);
     }
     else
-        Console.WriteLine("Error while getting the information from the API.");
+        Console.WriteLine("Error while getting the information from the API");
 }
 
 foreach (Movie movie in movies)
