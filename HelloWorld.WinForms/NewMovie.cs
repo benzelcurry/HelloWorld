@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using HelloWorld.Domain.Models;
+using System.Text;
 
 namespace HelloWorld.WinForms
 {

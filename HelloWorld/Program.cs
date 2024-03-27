@@ -1,4 +1,4 @@
-﻿using HelloWorld;
+﻿using HelloWorld.Domain.Models;
 
 List<Movie> movies = new();
 

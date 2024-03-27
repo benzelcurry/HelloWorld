@@ -1,69 +1,68 @@
-﻿using HelloWorld.Business.Models;
-using HelloWorld.Business.Interfaces;
+﻿using HelloWorld.Business.Interfaces;
+using HelloWorld.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 
-namespace HelloWorld.Business
+namespace HelloWorld.Business;
+
+public class MovieService : IMovieService
 {
-    public class MovieService : IMovieService
+    private DataContext dataContext;
+
+    public MovieService(DataContext dataContext)
     {
-        private DataContext dataContext;
+        this.dataContext = dataContext;
+    }
 
-        public MovieService(DataContext dataContext)
-        {
-            this.dataContext = dataContext;
-        }
+    public List<Movie> Get()
+    {
+        List<Movie> movies = dataContext.Movies.Include(x => x.Genre).ToList();
+        return movies;
+    }
 
-        public List<Movie> Get()
-        {
-            List<Movie> movies = dataContext.Movies.Include(x => x.Genre).ToList();
-            return movies;
-        }
+    public void Create(Movie movie)
+    {
+        dataContext.Movies.Add(movie);
+        dataContext.SaveChanges();
+    }
 
-        public void Create(Movie movie)
+    public void Delete(int id)
+    {
+        using (IDbContextTransaction transaction = dataContext.Database.BeginTransaction())
         {
-            dataContext.Movies.Add(movie);
-            dataContext.SaveChanges();
-        }
-
-        public void Delete(int id)
-        {
-            using (IDbContextTransaction transaction = dataContext.Database.BeginTransaction())
+            try
             {
-                try
-                {
-                    Movie movieToDelete = dataContext.Movies.Single(x => x.Id == id);
+                Movie movieToDelete = dataContext.Movies.Single(x => x.Id == id);
 
-                    dataContext.Remove(movieToDelete);
-                    dataContext.SaveChanges();
+                dataContext.Remove(movieToDelete);
+                dataContext.SaveChanges();
 
-                    transaction.Commit();
-                }
-                catch (Exception ex)
-                {
-                    transaction.Rollback();
-                }
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
             }
         }
+    }
 
-        public void Update(Movie movie)
+    public void Update(Movie movie)
+    {
+        using (IDbContextTransaction transaction = dataContext.Database.BeginTransaction())
         {
-            using (IDbContextTransaction transaction = dataContext.Database.BeginTransaction())
+            try
             {
-                try
-                {
-                    Movie movieToUpdate = dataContext.Movies.Single(x => x.Id == movie.Id);
+                Movie movieToUpdate = dataContext.Movies.Single(x => x.Id == movie.Id);
 
-                    movieToUpdate.Seen = movie.Seen;
-                    movieToUpdate.Title = movie.Title;
-                    movieToUpdate.Plot = movie.Plot;
+                movieToUpdate.Seen = movie.Seen;
+                movieToUpdate.Title = movie.Title;
+                movieToUpdate.Plot = movie.Plot;
 
-                    transaction.Commit();
-                }
-                catch (Exception ex)
-                {
-                    transaction.Rollback();
-                }
+                transaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
             }
         }
     }

@@ -1,12 +1,11 @@
-﻿using HelloWorld.Business.Models;
+﻿using HelloWorld.Domain.Models;
 
-namespace HelloWorld.Business.Interfaces
+namespace HelloWorld.Business.Interfaces;
+
+public interface IMovieService
 {
-    public interface IMovieService
-    {
-        List<Movie> Get();
-        void Create(Movie movie);
-        void Delete(int id);
-        void Update(Movie movie);
-    }
+    List<Movie> Get();
+    void Create(Movie movie);
+    void Delete(int id);
+    void Update(Movie movie);
 }

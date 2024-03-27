@@ -1053,6 +1053,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "HelloWorld.Domain": "1.0.0",
           "Microsoft.Data.SqlClient": "5.1.1",
           "Microsoft.EntityFrameworkCore": "7.0.9",
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.9",
@@ -1064,6 +1065,16 @@
         },
         "runtime": {
           "bin/placeholder/HelloWorld.Business.dll": {}
+        }
+      },
+      "HelloWorld.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/HelloWorld.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelloWorld.Domain.dll": {}
         }
       }
     }
@@ -2832,6 +2843,11 @@
       "type": "project",
       "path": "../HelloWorld.Business/HelloWorld.Business.csproj",
       "msbuildProject": "../HelloWorld.Business/HelloWorld.Business.csproj"
+    },
+    "HelloWorld.Domain/1.0.0": {
+      "type": "project",
+      "path": "../HelloWorld.Domain/HelloWorld.Domain.csproj",
+      "msbuildProject": "../HelloWorld.Domain/HelloWorld.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

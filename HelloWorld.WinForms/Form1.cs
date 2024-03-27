@@ -1,15 +1,11 @@
-using HelloWorld.Business;
+using HelloWorld.Domain.Models;
 
 namespace HelloWorld.WinForms
 {
     public partial class Form1 : Form
     {
-        private MovieService movieService;
-
         public Form1()
         {
-            movieService = new();
-
             InitializeComponent();
         }
 
@@ -26,7 +22,7 @@ namespace HelloWorld.WinForms
 
         private void lbMovies_DoubleClick(object sender, EventArgs e)
         {
-            Business.Models.Movie selected = (Business.Models.Movie)lbMovies.SelectedItem;
+            Movie selected = (Movie)lbMovies.SelectedItem;
 
             NewMovie newMovie = new();
             newMovie.Current = selected;

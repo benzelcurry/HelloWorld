@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.WinForms", "Hell
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.Api", "HelloWorld.Api\HelloWorld.Api.csproj", "{C140085D-4193-418B-AB91-FBE137DF0D1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Domain", "HelloWorld.Domain\HelloWorld.Domain.csproj", "{00895504-C8E9-4EE5-BF0B-1D84588A6240}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld.Domain", "HelloWorld.Domain\HelloWorld.Domain.csproj", "{36F4D750-1B3D-4716-886F-15FA61FC593E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{C140085D-4193-418B-AB91-FBE137DF0D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C140085D-4193-418B-AB91-FBE137DF0D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C140085D-4193-418B-AB91-FBE137DF0D1E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00895504-C8E9-4EE5-BF0B-1D84588A6240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00895504-C8E9-4EE5-BF0B-1D84588A6240}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00895504-C8E9-4EE5-BF0B-1D84588A6240}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00895504-C8E9-4EE5-BF0B-1D84588A6240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F4D750-1B3D-4716-886F-15FA61FC593E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F4D750-1B3D-4716-886F-15FA61FC593E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F4D750-1B3D-4716-886F-15FA61FC593E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F4D750-1B3D-4716-886F-15FA61FC593E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

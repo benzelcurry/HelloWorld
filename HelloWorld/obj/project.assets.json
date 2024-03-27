@@ -14,6 +14,16 @@
             "related": ".xml"
           }
         }
+      },
+      "HelloWorld.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/HelloWorld.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelloWorld.Domain.dll": {}
+        }
       }
     }
   },
@@ -47,10 +57,16 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "HelloWorld.Domain/1.0.0": {
+      "type": "project",
+      "path": "../HelloWorld.Domain/HelloWorld.Domain.csproj",
+      "msbuildProject": "../HelloWorld.Domain/HelloWorld.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "HelloWorld.Domain >= 1.0.0",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
@@ -85,7 +101,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld.Domain\\HelloWorld.Domain.csproj": {
+              "projectPath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld.Domain\\HelloWorld.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

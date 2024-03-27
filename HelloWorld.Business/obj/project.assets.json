@@ -1128,6 +1128,16 @@
             "rid": "win"
           }
         }
+      },
+      "HelloWorld.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/HelloWorld.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelloWorld.Domain.dll": {}
+        }
       }
     }
   },
@@ -3033,10 +3043,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "HelloWorld.Domain/1.0.0": {
+      "type": "project",
+      "path": "../HelloWorld.Domain/HelloWorld.Domain.csproj",
+      "msbuildProject": "../HelloWorld.Domain/HelloWorld.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "HelloWorld.Domain >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.1.1",
       "Microsoft.EntityFrameworkCore >= 7.0.9",
       "Microsoft.EntityFrameworkCore.InMemory >= 7.0.9",
@@ -3076,7 +3092,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld.Domain\\HelloWorld.Domain.csproj": {
+              "projectPath": "C:\\Users\\BenAW\\source\\repos\\HelloWorld\\HelloWorld.Domain\\HelloWorld.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

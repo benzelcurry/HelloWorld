@@ -1,4 +1,4 @@
-﻿using HelloWorld.Business.Models;
+﻿using HelloWorld.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace HelloWorld.Business;

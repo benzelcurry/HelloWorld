@@ -18,4 +18,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HelloWorld.Domain\HelloWorld.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
