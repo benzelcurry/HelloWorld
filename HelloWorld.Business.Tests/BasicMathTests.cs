@@ -12,5 +12,15 @@
 
             Assert.True(c == 2);
         }
+
+        [Theory]
+        [InlineData(1, 2, 3)]
+        [InlineData(7, 9, 16)]
+        [InlineData(5, 5, 11)]
+        public void Should_SumUpNumbers(int a, int b, int expected)
+        {
+            int result = a + b;
+            Assert.Equal(expected, result);
+        }
     }
 }
